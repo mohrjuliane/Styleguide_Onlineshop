@@ -1,0 +1,49 @@
+@import "variables.scss";
+
+.dark-bg {
+  background-color: $dark-grey;
+}
+
+.light-bg {
+  background-color: $white;
+}
+
+.yellow-bg {
+  background-color: $yellow;
+}
+
+.grey-bg {
+  background-color: $grey;
+}
+
+.green-bg {
+  background-color: $dark-green;
+}
+
+.red-bg {
+  background-color: $red;
+}
+
+.none-bg {
+  background: none;
+}
+
+.white-bg {
+  background-color: #ffffff;
+}
+
+.none-bg-color {
+  background-color: none;
+}
+
+.bg-size-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-position-x-0 {
+  background-position-x: 0px;
+}

@@ -1,0 +1,95 @@
+@import "variables.scss";
+
+.round-border-top-right {
+  border-top-right-radius: 15px;
+}
+
+.round-border-top-left {
+  border-top-left-radius: 15px;
+}
+
+.round-border-bottom-right {
+  border-bottom-right-radius: 15px;
+}
+
+.round-border-bottom-left {
+  border-bottom-left-radius: 15px;
+}
+
+.round-border-small {
+  border-radius: 4px;
+}
+
+.round-border-medium {
+  border-radius: 25px;
+}
+
+.circle-border {
+  border-radius: 20px;
+}
+
+.border-8 {
+  border-radius: 8px;
+}
+
+.yellow-border {
+  box-shadow: 0 0 0 4px $yellow;
+  border: none;
+}
+
+.black-border {
+  box-shadow: 0 0 0 4px $dark-grey;
+  border: none;
+}
+
+.inputfield-border {
+  box-shadow: 0 0 0 2px $white;
+  border: none;
+}
+
+.inputfield-border-active {
+  box-shadow: 0 0 0 2px $yellow;
+  border: none;
+}
+
+.switchbutton-border {
+  box-shadow: 0 0 0 3px $dark-grey;
+  border: none;
+}
+
+.border-left-red {
+  border-style: solid;
+  border-left-width: 6px;
+  border-left-color: $red;
+}
+
+.border-left-green {
+  border-style: solid;
+  border-left-width: 6px;
+  border-left-color: $dark-green;
+}
+
+.border-right-grey {
+  border-right: 1px solid $grey;
+}
+
+.no-border {
+  border: none;
+}
+
+.border-5 {
+  border-radius: 5px;
+}
+
+.round-border-bottom-right-8 {
+  border-bottom-right-radius: 8px;
+}
+
+.round-border-bottom-left-8 {
+  border-bottom-left-radius: 8px;
+}
+
+.yellow-border-small {
+  box-shadow: 0 0 0 2px $yellow;
+  border: none;
+}

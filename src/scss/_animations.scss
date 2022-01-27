@@ -1,0 +1,24 @@
+
+@mixin animate($animation,$duration,$method,$times){
+    animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name){
+    @keyframes #{$name}{
+        @content;
+    }
+}
+
+.animation-left {
+    @include keyframes(fadeleft) {
+        0%{
+            opacity: 1;
+            transform: translateX(-18px);
+        }
+        100%{
+            opacity: 0;
+            transform: translateX(0px);
+        }
+    }
+    @include animate(fadeleft, 1s, linear, 1)
+}

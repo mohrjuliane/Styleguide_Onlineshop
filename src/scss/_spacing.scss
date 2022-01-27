@@ -1,0 +1,143 @@
+.gap-bottom {
+  margin-bottom: 30px;
+}
+
+.margin-top-bottom-8 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.gap-top-small {
+  margin-top: 10px;
+}
+
+.gap-top-medium {
+  margin-top: 30px;
+}
+
+.gap-top-large {
+  margin-top: 80px;
+}
+
+.gap-right-small {
+  margin-right: 10px;
+}
+
+.gap-left-small {
+  margin-left: 20px;
+}
+
+.gap-right-medium {
+  margin-right: 30px;
+}
+
+.padding-30 {
+  padding: 30px;
+}
+
+.padding-right-30 {
+  padding-right: 30px;
+}
+
+.padding-left-30 {
+  padding-left: 30px;
+}
+
+.padding-top-30 {
+  padding-top: 30px;
+}
+
+.padding-5 {
+  padding: 5px;
+}
+
+.padding-8 {
+  padding: 8px;
+}
+
+.padding-15 {
+  padding: 15px;
+}
+
+.padding-bottom-30 {
+  padding-bottom: 30px;
+}
+
+.padding-button {
+  padding: 9px 12px;
+}
+
+.padding-button-narrow {
+  padding: 6px 12px;
+}
+
+.big-padding-button {
+  padding: 15px 30px;
+}
+
+.gap-20-flex {
+  gap: 20px;
+}
+
+.right-10 {
+  right: 10px;
+}
+
+.margin-top-160 {
+  margin-top: 160px;
+}
+
+.right-20 {
+  right: 20px;
+}
+
+.top-20 {
+  top: 20px;
+}
+
+.left-20 {
+  left: 20px;
+}
+
+.bottom-20 {
+  bottom: 20px;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.padding-0 {
+  padding: 0;
+}
+
+.gap-8-flex {
+  gap: 8px;
+}
+
+.bottom-10 {
+  bottom: 10px;
+}
+
+.gap-10-resize-20 {
+  gap: 10px;
+  @include breakpoint(tablet) {
+    gap: 20px;
+  }
+}
+
+.gap-right-70 {
+  margin-right: 70px;
+}
+
+.left-50perc {
+  left: 50%;
+}
+
+.top-50perc {
+  top: 50%;
+}

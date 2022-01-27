@@ -1,0 +1,81 @@
+@import "reset.scss";
+@import "animations.scss";
+@import "backgrounds.scss";
+@import "borders.scss";
+@import "boxalignment.scss";
+@import "effects.scss";
+@import "filters.scss";
+@import "flexbox.scss";
+@import "grid.scss";
+@import "interactivity.scss";
+@import "layout.scss";
+@import "sizing.scss";
+@import "spacing.scss";
+@import "svg.scss";
+@import "transforms.scss";
+@import "typography.scss";
+
+html {
+  font-family: "Raleway";
+  scroll-behavior: smooth;
+}
+
+.app {
+  display: flex;
+}
+
+main {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 30px;
+  box-sizing: border-box;
+  @media (min-width: $desktop) {
+    margin-left: 30vw;
+    margin-right: 10vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+}
+
+section {
+  margin-top: 30px;
+}
+
+.separator {
+  border-bottom: 1px solid $grey;
+}
+
+.slide {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  img {
+    max-height: 120px;
+  }
+}
+
+.pop-up {
+  background-color: $white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4em;
+  z-index: 5;
+  p {
+    color: $dark-grey;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(1px);
+}

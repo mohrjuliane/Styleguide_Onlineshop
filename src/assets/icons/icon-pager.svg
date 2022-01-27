@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <g id="Gruppe_118" data-name="Gruppe 118" transform="translate(-225 -75.248)">
+    <g id="Slider_Nav" data-name="Slider Nav" transform="translate(225 75.248)">
+      <circle id="Ellipse_40" data-name="Ellipse 40" cx="4" cy="4" r="4" transform="translate(2 2)" fill="#383737"/>
+      <g id="Ellipse_41" data-name="Ellipse 41" fill="none" stroke="#383737" stroke-width="1">
+        <circle cx="6" cy="6" r="6" stroke="none"/>
+        <circle cx="6" cy="6" r="5.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

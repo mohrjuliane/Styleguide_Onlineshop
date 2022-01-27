@@ -1,0 +1,183 @@
+@import "variables.scss";
+
+@font-face {
+  font-family: "PaytoneOne";
+  src: url(./assets/fonts/PaytoneOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-Italic";
+  src: url(./assets/fonts/Raleway-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(./assets/fonts/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Menlo";
+  src: url(./assets/fonts/Menlo-Regular.ttf);
+}
+
+.underlined {
+  text-decoration: underline;
+}
+.font-big {
+  font-size: 34px;
+}
+
+.font-medium {
+  font-size: 24px;
+}
+
+.font-small {
+  font-size: 18px;
+}
+
+.font-extra-small {
+  font-size: 14px;
+}
+
+.font-big-button {
+  font-size: 15px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.raleway {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+
+.menlo {
+  font-family: "Menlo", Helvetica, Arial, sans-serif;
+}
+
+.paytone {
+  font-family: "PaytoneOne", Helvetica, Arial, sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.font-dark {
+  color: $dark-grey;
+}
+.font-pink {
+  color: palevioletred;
+}
+
+.font-green {
+  color: green;
+}
+
+.font-yellow {
+  color: $yellow;
+}
+
+.font-white {
+  color: $white;
+}
+
+h1 {
+  font-family: "PaytoneOne";
+  color: $white;
+  font-size: 42px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-family: "PaytoneOne";
+  color: $white;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: "Raleway";
+  color: $white;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+p {
+  font-family: "Raleway";
+  color: $white;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.line-height-24 {
+  line-height: 24px;
+}
+
+.line-height-20 {
+  line-height: 20px;
+}
+
+.preis {
+  font-family: "Raleway";
+  font-weight: lighter;
+  font-size: 16px;
+  color: $dark-grey;
+}
+
+.marke {
+  font-family: "Raleway";
+  font-size: 14px;
+  color: $grey;
+  text-transform: uppercase;
+}
+
+.artikelname-review {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 16px;
+  color: $dark-grey;
+}
+
+.artikelname-detail {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 22px;
+  color: $yellow;
+}
+
+.artikelnummer {
+  font-family: "Raleway";
+  font-size: 14px;
+  color: $grey;
+}
+
+a {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 18px;
+  color: $dark-grey;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.selected {
+  color: $yellow;
+}
+
+.code {
+  font-family: "Menlo-Regular";
+  padding: 10px;
+  font-size: 13px;
+}
+
+li {
+  font-family: "Raleway";
+  list-style-type: disc;
+  list-style-position: outside;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}

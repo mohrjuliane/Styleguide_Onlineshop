@@ -1,0 +1,934 @@
+html, body, div, span, applet, object, iframe, h4, h5, h6, blockquote, pre, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.animation-left {
+  animation: fadeleft 1s linear 1;
+}
+@keyframes fadeleft {
+  0% {
+    opacity: 1;
+    transform: translateX(-18px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+}
+
+.dark-bg {
+  background-color: #383737;
+}
+
+.light-bg {
+  background-color: #f5f5f5;
+}
+
+.yellow-bg {
+  background-color: #e4e233;
+}
+
+.grey-bg {
+  background-color: #939393;
+}
+
+.green-bg {
+  background-color: #74b72e;
+}
+
+.red-bg {
+  background-color: #e46858;
+}
+
+.none-bg {
+  background: none;
+}
+
+.white-bg {
+  background-color: #ffffff;
+}
+
+.none-bg-color {
+  background-color: none;
+}
+
+.bg-size-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-position-x-0 {
+  background-position-x: 0px;
+}
+
+.round-border-top-right {
+  border-top-right-radius: 15px;
+}
+
+.round-border-top-left {
+  border-top-left-radius: 15px;
+}
+
+.round-border-bottom-right {
+  border-bottom-right-radius: 15px;
+}
+
+.round-border-bottom-left {
+  border-bottom-left-radius: 15px;
+}
+
+.round-border-small {
+  border-radius: 4px;
+}
+
+.round-border-medium {
+  border-radius: 25px;
+}
+
+.circle-border {
+  border-radius: 20px;
+}
+
+.border-8 {
+  border-radius: 8px;
+}
+
+.yellow-border {
+  box-shadow: 0 0 0 4px #e4e233;
+  border: none;
+}
+
+.black-border {
+  box-shadow: 0 0 0 4px #383737;
+  border: none;
+}
+
+.inputfield-border {
+  box-shadow: 0 0 0 2px #f5f5f5;
+  border: none;
+}
+
+.inputfield-border-active {
+  box-shadow: 0 0 0 2px #e4e233;
+  border: none;
+}
+
+.switchbutton-border {
+  box-shadow: 0 0 0 3px #383737;
+  border: none;
+}
+
+.border-left-red {
+  border-style: solid;
+  border-left-width: 6px;
+  border-left-color: #e46858;
+}
+
+.border-left-green {
+  border-style: solid;
+  border-left-width: 6px;
+  border-left-color: #74b72e;
+}
+
+.border-right-grey {
+  border-right: 1px solid #939393;
+}
+
+.no-border {
+  border: none;
+}
+
+.border-5 {
+  border-radius: 5px;
+}
+
+.round-border-bottom-right-8 {
+  border-bottom-right-radius: 8px;
+}
+
+.round-border-bottom-left-8 {
+  border-bottom-left-radius: 8px;
+}
+
+.yellow-border-small {
+  box-shadow: 0 0 0 2px #e4e233;
+  border: none;
+}
+
+.center-both-ways {
+  justify-content: center;
+  align-items: center;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-vertically {
+  align-items: center;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.float-left {
+  float: left;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-40 {
+  gap: 40px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.no-outline {
+  outline: none;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.absolute-position {
+  position: absolute;
+}
+
+.relative-position {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+
+.z-index-5 {
+  z-index: 5;
+}
+
+.min-width-300 {
+  min-width: 300px;
+}
+
+.width-400 {
+  width: 400px;
+}
+
+.max-width-200 {
+  max-width: 200px;
+}
+
+.max-width-300 {
+  max-width: 300px;
+}
+
+.max-width-80 {
+  max-width: 80px;
+}
+
+.fit-width {
+  width: fit-content;
+}
+
+.first-col {
+  width: 15vw;
+}
+@media (max-width: 800px) {
+  .first-col {
+    width: 80vw;
+  }
+}
+
+.second-col {
+  width: 40vw;
+}
+@media (max-width: 800px) {
+  .second-col {
+    width: 80vw;
+  }
+}
+
+.third-col {
+  width: 30vw;
+}
+@media (max-width: 800px) {
+  .third-col {
+    width: 80vw;
+  }
+}
+
+.height-subheadline {
+  height: 25px;
+}
+
+.width-40 {
+  width: 40px;
+}
+
+.height-40 {
+  height: 40px;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.size-icon-small {
+  width: 20px;
+  height: 20px;
+}
+
+.size-icon {
+  width: 30px;
+  height: 30px;
+  fill: #383737;
+}
+@media (min-width: 800px) {
+  .size-icon {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.height-30 {
+  height: 30px;
+}
+
+.width-65 {
+  width: 65px;
+}
+
+.height-100px {
+  height: 100px;
+}
+
+.max-width-700 {
+  max-width: 700px;
+}
+
+.height-200px {
+  height: 200px;
+}
+
+.height-80vh {
+  height: 80vh;
+}
+
+.height-150px {
+  height: 150px;
+}
+
+.min-width-180px {
+  min-width: 180px;
+}
+
+.max-width-520 {
+  max-width: 520px;
+}
+
+.width-100vw {
+  width: 100vw;
+}
+
+.max-height-120px {
+  max-height: 120px;
+}
+
+.max-width-120px {
+  max-width: 150px;
+}
+
+.height-10px {
+  height: 10px;
+}
+
+.width-10px {
+  width: 10px;
+}
+
+.height-60px {
+  height: 60px;
+}
+
+.height-50px {
+  height: 50px;
+}
+
+.width-auto {
+  width: auto;
+}
+
+.height-nav {
+  height: 80px;
+}
+@media (min-width: 800px) {
+  .height-nav {
+    height: 100px;
+  }
+}
+
+.width-50 {
+  width: 50px;
+}
+
+.width-35 {
+  width: 35px;
+}
+
+.height-80-resize-100 {
+  height: 80px;
+}
+@media (min-width: 800px) {
+  .height-80-resize-100 {
+    height: 100px;
+  }
+}
+
+.gap-bottom {
+  margin-bottom: 30px;
+}
+
+.margin-top-bottom-8 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.gap-top-small {
+  margin-top: 10px;
+}
+
+.gap-top-medium {
+  margin-top: 30px;
+}
+
+.gap-top-large {
+  margin-top: 80px;
+}
+
+.gap-right-small {
+  margin-right: 10px;
+}
+
+.gap-left-small {
+  margin-left: 20px;
+}
+
+.gap-right-medium {
+  margin-right: 30px;
+}
+
+.padding-30 {
+  padding: 30px;
+}
+
+.padding-right-30 {
+  padding-right: 30px;
+}
+
+.padding-left-30 {
+  padding-left: 30px;
+}
+
+.padding-top-30 {
+  padding-top: 30px;
+}
+
+.padding-5 {
+  padding: 5px;
+}
+
+.padding-8 {
+  padding: 8px;
+}
+
+.padding-15 {
+  padding: 15px;
+}
+
+.padding-bottom-30 {
+  padding-bottom: 30px;
+}
+
+.padding-button {
+  padding: 9px 12px;
+}
+
+.padding-button-narrow {
+  padding: 6px 12px;
+}
+
+.big-padding-button {
+  padding: 15px 30px;
+}
+
+.gap-20-flex {
+  gap: 20px;
+}
+
+.right-10 {
+  right: 10px;
+}
+
+.margin-top-160 {
+  margin-top: 160px;
+}
+
+.right-20 {
+  right: 20px;
+}
+
+.top-20 {
+  top: 20px;
+}
+
+.left-20 {
+  left: 20px;
+}
+
+.bottom-20 {
+  bottom: 20px;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.padding-0 {
+  padding: 0;
+}
+
+.gap-8-flex {
+  gap: 8px;
+}
+
+.bottom-10 {
+  bottom: 10px;
+}
+
+.gap-10-resize-20 {
+  gap: 10px;
+}
+@media (min-width: 800px) {
+  .gap-10-resize-20 {
+    gap: 20px;
+  }
+}
+
+.gap-right-70 {
+  margin-right: 70px;
+}
+
+.left-50perc {
+  left: 50%;
+}
+
+.top-50perc {
+  top: 50%;
+}
+
+.fill-yellow {
+  fill: #e4e233;
+}
+
+.fill-dark {
+  fill: #383737;
+}
+
+.translate-left-18 {
+  transform: translateX(-18px);
+}
+
+.translate-right-18 {
+  transform: translateX(18px);
+}
+
+.translate-xy-50perc {
+  transform: translate(-50%, -50%);
+}
+
+@font-face {
+  font-family: "PaytoneOne";
+  src: url(./assets/fonts/PaytoneOne-Regular.ttf);
+}
+@font-face {
+  font-family: "Raleway-Italic";
+  src: url(./assets/fonts/Raleway-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(./assets/fonts/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Menlo";
+  src: url(./assets/fonts/Menlo-Regular.ttf);
+}
+.underlined {
+  text-decoration: underline;
+}
+
+.font-big {
+  font-size: 34px;
+}
+
+.font-medium {
+  font-size: 24px;
+}
+
+.font-small {
+  font-size: 18px;
+}
+
+.font-extra-small {
+  font-size: 14px;
+}
+
+.font-big-button {
+  font-size: 15px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.raleway {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+
+.menlo {
+  font-family: "Menlo", Helvetica, Arial, sans-serif;
+}
+
+.paytone {
+  font-family: "PaytoneOne", Helvetica, Arial, sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.font-dark {
+  color: #383737;
+}
+
+.font-pink {
+  color: palevioletred;
+}
+
+.font-green {
+  color: green;
+}
+
+.font-yellow {
+  color: #e4e233;
+}
+
+.font-white {
+  color: #f5f5f5;
+}
+
+h1 {
+  font-family: "PaytoneOne";
+  color: #f5f5f5;
+  font-size: 42px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-family: "PaytoneOne";
+  color: #f5f5f5;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: "Raleway";
+  color: #f5f5f5;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+p {
+  font-family: "Raleway";
+  color: #f5f5f5;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.line-height-24 {
+  line-height: 24px;
+}
+
+.line-height-20 {
+  line-height: 20px;
+}
+
+.preis {
+  font-family: "Raleway";
+  font-weight: lighter;
+  font-size: 16px;
+  color: #383737;
+}
+
+.marke {
+  font-family: "Raleway";
+  font-size: 14px;
+  color: #939393;
+  text-transform: uppercase;
+}
+
+.artikelname-review {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 16px;
+  color: #383737;
+}
+
+.artikelname-detail {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 22px;
+  color: #e4e233;
+}
+
+.artikelnummer {
+  font-family: "Raleway";
+  font-size: 14px;
+  color: #939393;
+}
+
+a {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 18px;
+  color: #383737;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.selected {
+  color: #e4e233;
+}
+
+.code {
+  font-family: "Menlo-Regular";
+  padding: 10px;
+  font-size: 13px;
+}
+
+li {
+  font-family: "Raleway";
+  list-style-type: disc;
+  list-style-position: outside;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+html {
+  font-family: "Raleway";
+  scroll-behavior: smooth;
+}
+
+.app {
+  display: flex;
+}
+
+main {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+@media (min-width: 1290px) {
+  main {
+    margin-left: 30vw;
+    margin-right: 10vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+}
+
+section {
+  margin-top: 30px;
+}
+
+.separator {
+  border-bottom: 1px solid #939393;
+}
+
+.slide {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+}
+.slide img {
+  max-height: 120px;
+}
+
+.pop-up {
+  background-color: #f5f5f5;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4em;
+  z-index: 5;
+}
+.pop-up p {
+  color: #383737;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(1px);
+}
+
+/*# sourceMappingURL=App.css.map */
